@@ -10,15 +10,27 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" type="text/css" href="./app/index.css">
+		<link rel="icon" href="./app/favicon.ico" type="image/x-icon"/>
 	</head>
 
-	<body>
+	<body ng-app = "animateApp">
 		<div class="container">
-			<div class="jumbotron">
-			<h1>Welcome to My Website</h1>
-			<p>This is my Sample Website</p>
+			<ul>
+				<li> <a href="index.html"> Home </a> </li>
+				<li> <a href="about.html"> About </a> </li>
+				<li> <a href="contact.html"> Portfolio </a> </li>
+				<li> <a href="Skills.html"> Skills </a> </li>
+				<li> <a href="Contact.html"> Contact </a> </li>
+			</ul>
+
+			 <div ng-view></div>
 		</div>
-		
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    	<script src="./app/index.js"></script>
 	</body>
 </html>

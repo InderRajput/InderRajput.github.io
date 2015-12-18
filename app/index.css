@@ -1,0 +1,18 @@
+body {
+	font-family: cambria;
+}
+
+ul {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	list-style: none;
+	text-align: center;
+	font-weight: 3em;
+}
+
+ul li {
+	display:inline-block;
+	margin: 0 27px;
+	font-size: 1.3em;
+	text-decoration:none;
+}

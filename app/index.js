@@ -7,22 +7,22 @@ animateApp.config(function($routeProvider) {
 			controller: "homeController"
 		})
 
-		when("/about", {
+		.when("/about", {
 			templateUrl: "about.html",
 			controller: "aboutController"
 		})
 
-		when("/contact", {
+		.when("/contact", {
 			templateUrl: "contact.html",
 			controller: "contactController"
 		})
 
-		when("/portfolio", {
+		.when("/portfolio", {
 			templateUrl: "portfolio.html",
 			controller: "portfolioController"
 		})
 
-		when("/skills", {
+		.when("/skills", {
 			templateUrl: "skills.html",
 			controller: "skillsController"
 		});

@@ -1,5 +1,7 @@
 body {
 	font-family: cambria;
+	background: url("background.jpg");
+	color: f8f8ff;
 }
 
 ul {

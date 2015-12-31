@@ -1,0 +1,85 @@
+body {
+	font-family: cambria;
+	background: url(background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/*@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}*/
+
+
+#navigation a {
+	text-decoration:none;
+	position: relative;
+	color: white;
+}
+
+#navigation a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	border-bottom: 2px solid white;
+	transition: 0.4s;
+	color: white;
+}
+
+
+#navigation a:hover:after {
+	width: 100%;
+}
+
+
+ul {
+	list-style: none;
+}
+
+#navigation li:hover {
+	animation: bounce 1s;
+	text-decoration:none;
+}
+
+
+.links {
+	margin-top: 20px;
+}
+
+
+
+/*Footer CSS*/
+
+.footer {
+	position: fixed;
+	bottom: 10px;
+}
+
+.fa {
+	-webkit-transition: 0.6s ease-out;
+	-moz-transition:  0.6s ease-out;
+	transition:  0.6s ease-out;
+}
+  
+ .fa:hover {
+		-webkit-transform: rotateZ(720deg);
+		-moz-transform: rotateZ(720deg);
+		transform: rotateZ(720deg);
+}

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "myApp" ng-controller = "myController">
 	<head>
-		<title>Home</title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-		
-		<link rel="stylesheet" type="text/css" href="./app/index.css">
-		<link rel="icon" href="./app/favicon.ico" type="image/x-icon"/>
+		<title>Personal Website</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="icon" href="favicon.icon" type="image/x-icon"/>
 	</head>
 
-	<body ng-app = "animateApp">
-		<div class="container">
-			<ul>
-				<li> <a href="www.http://inderrajput.github.io"> Home </a> </li>
-				<li> <a href="./app/about.html"> About </a> </li>
-				<li> <a href="./app/contact.html"> Portfolio </a> </li>
-				<li> <a href="./app/skills.html"> Skills </a> </li>
-				<li> <a href="./app/contact.html"> Contact </a> </li>
-			</ul>
+	<body>
+		<ul class = "container">
+			<li><h2> Inder Rajput </h2></li>
+			<div class="pull-right list-inline" id = "navigation">
+				<li><h4><a ui-sref = "home">Home</a></h4></li>
+				<li><h4><a ui-sref = "about">About</a></h4></li>
+				<li><h4><a ui-sref = "work">Sample Work</a></h4></li>
+				<li><h4><a ui-sref = "skills">Skills</a></h4></li>
+				<li><h4><a ui-sref = "contact">Contact</a></h4></li>
+			</div>
+		</ul>
 
-			 <div ng-view></div>
-		</div>
+			<div class = "container links">
+				<div ui-view></div>
+			</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
-    	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
-    	<script src="./app/index.js"></script>
+			<div ng-include="'templates/footer.html'"></div>
+
+		<script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src = "app.js"></script>
 	</body>
 </html>

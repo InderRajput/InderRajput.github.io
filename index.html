@@ -5,26 +5,24 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<link rel="icon" href="favicon.icon" type="image/x-icon"/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	</head>
 
 	<body>
 		<ul class = "container">
-			<li><h2> Inder Rajput </h2></li>
+			<li><h3><strong> Inder Rajput </strong></h3></li>
 			<div class="pull-right list-inline" id = "navigation">
 				<li><h4><a ui-sref = "home">Home</a></h4></li>
 				<li><h4><a ui-sref = "about">About</a></h4></li>
 				<li><h4><a ui-sref = "work">Sample Work</a></h4></li>
 				<li><h4><a ui-sref = "skills">Skills</a></h4></li>
-				<li><h4><a ui-sref = "contact">Contact</a></h4></li>
 			</div>
 		</ul>
 
-			<div class = "container links">
+			<div class = "container">
 				<div ui-view></div>
+				<div ng-include="'templates/footer.html'"></div>
 			</div>
-
-			<div ng-include="'templates/footer.html'"></div>
 
 		<script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 		<script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
